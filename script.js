@@ -4,16 +4,10 @@ const translatePigLatin = (aString) => {
         const consonants = aString.match(consonantRegex);
         return `${aString.replace(consonantRegex, "")}${consonants}ay`;
     }
-
     const vowelRegex = /^[aeiou]/; // any vowel at the beginning of string
     if (vowelRegex.test(aString)) {
         return `${aString}way`;
     }
-
-
-
-    
-    
 };
 
 console.log(translatePigLatin("california"));
